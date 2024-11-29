@@ -17,7 +17,7 @@
   align-items: center;
 }
 .背景 p {
-  font-size: 4rem;
+  font-size: 3rem;
   animation: 背景文字 7s infinite;
   background: linear-gradient(to right, #ff8a00, #e52e71);
   background-clip: text; 
@@ -29,7 +29,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
