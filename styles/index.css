@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.背景 {
+  background-image: url(../img/a5d555165cc20bb7cdb7722bd7ec7e20.png);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.背景 p {
+  font-size: 4rem;
+  animation: 背景文字 7s infinite;
+  background: linear-gradient(to right, #ff8a00, #e52e71);
+  background-clip: text; 
+  color: transparent; 
+}
+
+@keyframes 背景文字 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
