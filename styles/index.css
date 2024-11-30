@@ -17,7 +17,7 @@
   align-items: center;
 }
 .背景 p {
-  font-size: 3rem;
+  font-size: 50px;
   background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
   background-size: 200% 200%;
   background-clip: text;
