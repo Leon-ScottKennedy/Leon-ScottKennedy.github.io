@@ -18,20 +18,21 @@
 }
 .背景 p {
   font-size: 3rem;
-  animation: 背景文字 7s infinite;
-  background: linear-gradient(to right, #ff8a00, #e52e71);
-  background-clip: text; 
-  color: transparent; 
+  background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: 背景文字 5s linear infinite;
 }
 
 @keyframes 背景文字 {
   0% {
-    opacity: 1;
+    background-position: 0% 50%;
   }
   50% {
-    opacity: 0.2;
+    background-position: 100% 50%;
   }
   100% {
-    opacity: 1;
+    background-position: 0% 50%;
   }
 }
