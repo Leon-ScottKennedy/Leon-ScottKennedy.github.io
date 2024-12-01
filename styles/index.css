@@ -6,23 +6,36 @@
   box-sizing: border-box;
 }
 
-.背景 {
-  background-image: url(../img/a5d555165cc20bb7cdb7722bd7ec7e20.png);
+.背景区 {
+  background-image: url(../img/背景图片.png);
+  opacity: 0.98;
   background-position: center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+
+.背景文字区 {
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.背景 p {
+
+.背景文字区 p {
   font-size: 3.2rem;
   background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
   background-size: 200% 200%;
   background-clip: text;
   color: transparent;
   animation: 背景文字 6s linear infinite;
+  transition: font-size 0.3s ease; /* 过渡持续时间为0.3秒，速度曲线为ease */
+}
+
+@media screen and (max-width: 450px) {
+  .背景文字区 p {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes 背景文字 {
@@ -35,4 +48,113 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.工具区 {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.工具列表 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: calc(100% - 10vw); /* 减去左右间距 */
+}
+
+.工具列表 li {
+  width: 13vw;
+  height: 60%;
+  text-align: center;
+  border: solid 2px rgb(238, 223, 172, 0.7);
+  border-radius: 10px;
+}
+
+.工具列表 li a {
+  text-decoration: none;
+  color: #ffd900;
+}
+
+/* .工具列表 li:hover {
+  background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
+}  */
+
+
+      
+.工具列表 li {
+  position: relative;
+  overflow: hidden; /* 确保伪元素不会超出边界 */
+}
+
+.工具列表 li p{
+  position: relative;
+  z-index: 1; /* 文字在上层 */
+}
+
+.工具列表 li:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%; /* 从左侧开始 */
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
+  transition: left 0.5s ease; /* 过渡效果 */
+}
+.工具列表 li:hover p{
+  color: bisque;
+}
+
+.工具列表 li:nth-child(1):hover::before {
+  left: 0; 
+}
+
+.工具列表 li:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
+  transition: top 0.5s ease; 
+}
+
+.工具列表 li:nth-child(2):hover::before {
+  top: 0;
+}
+
+
+
+.工具列表 li:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
+  transition: top 0.5s ease; 
+}
+
+.工具列表 li:nth-child(3):hover::before {
+  top: 0;
+}
+
+.工具列表 li:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left:100%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
+  transition: left 0.5s ease; 
+}
+
+.工具列表 li:nth-child(4):hover::before {
+  left: 0;
 }
