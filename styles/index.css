@@ -7,15 +7,9 @@
 }
 
 
-@font-face {
-  font-family: 'YourCustomFont';
-  src: url('path-to-your-font.woff2') format('woff2'),
-       url('path-to-your-font.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+
 body {
-  font-family: 'YourCustomFont', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
