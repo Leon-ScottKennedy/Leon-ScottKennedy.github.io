@@ -108,10 +108,8 @@ body {
   transition: left 0.5s ease; 
 }
 
-
-
-.工具列表 li:hover p{
-  color: bisque;
+.工具列表 li:hover p a {
+  color: white; 
 }
 
 .工具列表 li:nth-child(1):hover::before {
