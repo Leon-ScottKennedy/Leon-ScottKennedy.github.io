@@ -29,7 +29,7 @@ body {
   align-items: center;
 }
 
-.背景文字区 p {
+.背景文字区 > p {
   font-size: 3.2rem;
   background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
   background-size: 200% 200%;
@@ -40,7 +40,7 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .背景文字区 p {
+  .背景文字区 > p {
     font-size: 1.5rem;
   }
 }
