@@ -92,7 +92,7 @@ body {
 }
 
 .工具列表 li p{
-  font-size: 30px;
+  font-size: 1.2rem;
   position: relative;
   z-index: 1;         
 }
