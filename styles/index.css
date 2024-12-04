@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 .背景区 {
   background-image: url(../img/背景图片.png);
   opacity: 0.98;
@@ -33,9 +32,9 @@
   transition: font-size 0.3s ease; /* 过渡持续时间为0.3秒，速度曲线为ease */
 }
 
-@media screen and (max-width: 450px) {
-  p:nth-child(1) {
-    font-size: 1.5rem;
+@media screen and (max-width: 600px) {
+  .背景文字区 p:nth-child(1) {
+    font-size: 3rem;
   }
 }
 
@@ -63,7 +62,7 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: calc(100% - 10vw); 
+  width: calc(100% - 10vw);
 }
 
 .工具列表 li {
@@ -79,62 +78,88 @@
   color: #ffd900;
 }
 
-      
 .工具列表 li {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.工具列表 li p{
+.工具列表 li p {
   font-size: 2rem;
   position: relative;
-  z-index: 1;         
+  z-index: 1;
+  transition: font-size 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .工具列表 li p {
+    font-size: 1.1rem;
+  }
 }
 
 .工具列表 li:nth-child(1)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
-  left: -100%; 
+  left: -100%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
-  transition: left 0.5s ease; 
+  background-image: linear-gradient(
+    45deg,
+    #ff5f6d,
+    #ffc371,
+    #9be15d,
+    #00a8c5,
+    #cdffeb
+  );
+  transition: left 0.5s ease;
 }
 
 .工具列表 li:hover p a {
-  color: white; 
+  color: white;
 }
 
 .工具列表 li:nth-child(1):hover::before {
-  left: 0; 
+  left: 0;
 }
 
 .工具列表 li:nth-child(2)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -100%;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
-  transition: top 0.5s ease; 
+  background-image: linear-gradient(
+    45deg,
+    #ff5f6d,
+    #ffc371,
+    #9be15d,
+    #00a8c5,
+    #cdffeb
+  );
+  transition: top 0.5s ease;
 }
 
 .工具列表 li:nth-child(2):hover::before {
   top: 0;
 }
 
-
 .工具列表 li:nth-child(3)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
-  left:0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
-  transition: top 0.5s ease; 
+  background-image: linear-gradient(
+    45deg,
+    #ff5f6d,
+    #ffc371,
+    #9be15d,
+    #00a8c5,
+    #cdffeb
+  );
+  transition: top 0.5s ease;
 }
 
 .工具列表 li:nth-child(3):hover::before {
@@ -142,14 +167,21 @@
 }
 
 .工具列表 li:nth-child(4)::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
-  left:100%;
+  left: 100%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, #ff5f6d, #ffc371, #9be15d, #00a8c5, #cdffeb);
-  transition: left 0.5s ease; 
+  background-image: linear-gradient(
+    45deg,
+    #ff5f6d,
+    #ffc371,
+    #9be15d,
+    #00a8c5,
+    #cdffeb
+  );
+  transition: left 0.5s ease;
 }
 
 .工具列表 li:nth-child(4):hover::before {
