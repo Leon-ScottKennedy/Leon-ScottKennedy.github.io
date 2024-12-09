@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.导航栏区 {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(60deg, #1b1e22 0%, #22272b 100%);
+}
+
+.导航栏 {
+  width: 120px;
+  height: 100%;
+  float: right;
+  border: solid red;
+}
+
+.欢迎区 {
+  height: 100vh;
+}
+.欢迎文本区 {
+  height: 100%;
+  background-image: url(/img/主页背景/主页图片3.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
+.欢迎没想好区 {
+  height: 100%;
+  border-top: 5px solid black;
+  background-image: url(/img/主页背景/主页图片2.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+}
