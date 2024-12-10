@@ -45,7 +45,7 @@
   background-size: 200% 200%;
   background-clip: text;
   color: transparent;
-  animation: HellWorld背景颜色动画 6s linear infinite ,HellWorld位置动画 6s linear forwards;
+  animation: HellWorld背景颜色动画 6s linear infinite ,HellWorld位置动画 4s linear forwards;
 }
 
 @keyframes HellWorld背景颜色动画 {
@@ -72,12 +72,20 @@
 }
 
 @media screen and (max-width: 1920px) {
-  .欢迎文本-Hell,
-  .欢迎文本-World {
+  .欢迎文本-HellWorld {
     font-size: 50px;
   }
   .欢迎文本-Hell {
     margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .欢迎文本-HellWorld {
+    font-size: 25px;
+  }
+  .欢迎文本-Hell {
+    margin-right: 20px;
   }
 }
 
