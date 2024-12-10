@@ -7,6 +7,7 @@
 }
 
 .导航栏区 {
+  z-index: 1;
   position: fixed;
   height: 50px;
   width: 100%;
@@ -17,7 +18,6 @@
   width: 120px;
   height: 100%;
   float: right;
-  border: solid red;
 }
 
 .欢迎区 {
@@ -31,6 +31,57 @@
   background-position: center;
   object-fit: contain;
 }
+
+.欢迎文本 {
+  border: solid red;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.欢迎文本-HellWorld {
+  font-size: 100px;
+  background: linear-gradient(270deg, #ff007f, #9b59b6, #2980b9, #1abc9c);
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  animation: HellWorld背景颜色动画 6s linear infinite ,HellWorld位置动画 6s linear forwards;
+}
+
+@keyframes HellWorld背景颜色动画 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes HellWorld位置动画 {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(40px);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .欢迎文本-Hell,
+  .欢迎文本-World {
+    font-size: 50px;
+  }
+  .欢迎文本-Hell {
+    margin-right: 40px;
+  }
+}
+
 .欢迎没想好区 {
   height: 100%;
   border-top: 5px solid black;
