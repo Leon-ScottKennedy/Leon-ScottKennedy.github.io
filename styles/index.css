@@ -62,30 +62,24 @@
 
 @keyframes HellWorld位置动画 {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 0;
   }
   100% {
-    transform: translateX(40px);
+    transform: translateY(15px);
     opacity: 1;
   }
 }
 
 @media screen and (max-width: 1920px) {
   .欢迎文本-HellWorld {
-    font-size: 50px;
-  }
-  .欢迎文本-Hell {
-    margin-right: 40px;
+    font-size: 70px;
   }
 }
 
 @media screen and (max-width: 780px) {
   .欢迎文本-HellWorld {
-    font-size: 25px;
-  }
-  .欢迎文本-Hell {
-    margin-right: 20px;
+    font-size: 40px;
   }
 }
 
