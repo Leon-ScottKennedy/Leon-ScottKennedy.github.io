@@ -33,7 +33,6 @@
 }
 
 .欢迎文本 {
-  border: solid red;
   height: 50%;
   display: flex;
   justify-content: center;
