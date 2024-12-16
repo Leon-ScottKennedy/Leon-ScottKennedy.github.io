@@ -52,7 +52,7 @@
 }
 
 .欢迎区按钮 {
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
